@@ -30,39 +30,61 @@ free a → releases memory
 
 list x = [1,2,3] → creates sequential memory blocks (linked style)
 
+print x[1] → prints specific node from linked list
+
+push x = 9 → adds node at the end of the list
+
+pop x → removes last node
+
+insert x at 1 = 99 → inserts value in between
+
 🧠 Memory Visualizer
 
 Color-coded blocks
 
 Blue = allocated
 
-Yellow = accessed
+Yellow = accessed (highlighted)
 
 White = free
 
 Real-time state update on compile
 
+Cascading flash animation for linked list
+
+🔗 Linked List Visualizer (using Three.js)
+
+Render linked list nodes in 3D space
+
+Arrows/lines represent next pointers
+
+Interactive layout (zoom, pan)
+
+Node values rendered as floating labels
+
 💻 Tech Stack
 
 React + TailwindCSS (frontend)
+
+Three.js (linked list visualizer)
 
 Core logic in vanilla JS (compiler & memory manager)
 
 📦 Future Plans
 
-push, pop, insert support for linked list
-
-True pointer visualization
-
 Step-run mode for compiler
+
+Drag-and-drop memory defragmentation
 
 GitHub-hosted live demo
 
 Export/import memory snapshots
 
+Runtime debug inspector panel
+
 🛠 How to Run
 
-git clone https://github.com/subhajit7252/linked0flow
+git clone https://github.com/subhajit7252/linked0flow.git
 cd linked0flow
 npm install
 npm run dev  # or npm start
@@ -77,7 +99,9 @@ Compiler theory
 
 React state visualizations
 
-Mindful coding rituals
+Mindful coding rituals (Ghost Protocol)
+
+3D visual rendering (Three.js)
 
 Designed and imagined by SUBHAJIT CHATTERJEE
 
