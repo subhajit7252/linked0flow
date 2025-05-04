@@ -1,70 +1,84 @@
-# Getting Started with Create React App
+🧠 linked0flow
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A Visual Memory Manager + Toy Compiler built in React
 
-## Available Scripts
+💡 Project Overview
 
-In the project directory, you can run:
+linked0flow is an educational simulation tool that mimics how memory works in a simplified virtual system. You can:
 
-### `npm start`
+Write and compile basic instructions (var, print, free, arithmetic)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Visualize memory blocks being allocated
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Highlight blocks during reads (e.g. print a)
 
-### `npm test`
+Simulate linked list-style variables (list a = [1,2,3])
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Learn compiler basics and memory visualization in one place
 
-### `npm run build`
+🚀 Features
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+🧾 Compiler
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+var a = 5 → allocates memory
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+print a → prints and highlights memory block
 
-### `npm run eject`
+var c = a + b → performs arithmetic
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+free a → releases memory
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+list x = [1,2,3] → creates sequential memory blocks (linked style)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+🧠 Memory Visualizer
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Color-coded blocks
 
-## Learn More
+Blue = allocated
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Yellow = accessed
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+White = free
 
-### Code Splitting
+Real-time state update on compile
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+💻 Tech Stack
 
-### Analyzing the Bundle Size
+React + TailwindCSS (frontend)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Core logic in vanilla JS (compiler & memory manager)
 
-### Making a Progressive Web App
+📦 Future Plans
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+push, pop, insert support for linked list
 
-### Advanced Configuration
+True pointer visualization
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Step-run mode for compiler
 
-### Deployment
+GitHub-hosted live demo
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Export/import memory snapshots
 
-### `npm run build` fails to minify
+🛠 How to Run
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+git clone https://github.com/subhajit7252/linked0flow
+cd linked0flow
+npm install
+npm run dev  # or npm start
+
+🙏 Credits
+
+Built as part of a personal learning journey into:
+
+Memory models
+
+Compiler theory
+
+React state visualizations
+
+Mindful coding rituals
+
+Designed and imagined by SUBHAJIT CHATTERJEE
+
+“Real compilers don't just parse code — they compile beliefs into memory.”
